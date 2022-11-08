@@ -1,0 +1,124 @@
+.header {
+    background: #000;
+}
+
+.header .slide-home {
+    background-image: url(../img/slide-page-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 370px;
+    width: 100%;
+}
+
+.header .gradient {
+    background: linear-gradient(90deg, #fff000, #eee333, #fff000);
+    height: 30px;
+    width: 100%;
+}
+
+.container {
+    background: #bbbbbb88;
+}
+
+.content .page-home{
+    font-family: "Roboto";
+    font-size: 20px;
+    text-align: left;
+}
+
+.page-about{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.gallery{
+    max-height: 200;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.footer {
+    background: #7b7b7d;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.footer #logo-rodape{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.thumbnail{
+    width: 100%;
+    overflow: hidden;
+}
+
+.thumbnail img{
+    -webkit-transition:all 0.5s ease;
+}
+
+.thumbnail img:hover{
+    transform: scale(1.5);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* MENU CUSTOM */
+.navbar-custom {
+    background-color:#202020;
+    color:#ffffff;
+    border-radius: 0;
+    font-family: "Roboto";
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #eee333;
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #eee333;
+    color: #202020;
+}
+
+.navbar-custom .navbar-brand {
+    color: #eee333;
+    background-color: #151515;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-custom .navbar-toggle {
+    background-color:#202020;
+    border-color: #fff;
+}
+.navbar-custom .icon-bar {
+    background-color:#fff;
+    border: 1px transparent;
+}
+
+.navbar-collapse.in{
+    overflow-y: auto;
+}
