@@ -16,21 +16,19 @@
 
     <header>
         <span class="logo">MAHLIGNUS</span>
-        <!--img class="header-image" src="img/logo.png" alt="logo"-->
         <nav class="header-menu">
-            <a class="header-menu-item">HOME</a>
-            <a class="header-menu-item">SOBRE MIM</a>
-            <a class="header-menu-item">PROJETOS</a>
-            <a class="header-menu-item">CONTATO</a>
+            <a class="header-menu-item" href="#section-home">HOME</a>
+            <a class="header-menu-item" href="#section-about-me">SOBRE MIM</a>
+            <a class="header-menu-item" href="#section-projects">PROJETOS</a>
         </nav>
     </header>
 
     <main class="content">
         
-        <section class="content-home">
+        <section id="section-home" class="content-home">
             
             <div class="content-home-text">
-                <h2 class="content-home-text-title">Rafael Mahl</h2>
+                <h2 class="content-home-text-title section-title">Rafael Mahl</h2>
             
                 <p class="content-home-text-description">
                     <span>Cientista da Computação</span>
@@ -44,28 +42,93 @@
             </div>
         </section>
 
-        <section class="content-about-me">
-            <h2>SOBRE MIM</h2>
+        <section id="section-about-me" class="content-about-me">
+            <h2 class="section-title">SOBRE MIM</h2>
             <img class="content-about-me-image" src="img/pixelart-mahlignus.jpg" alt="avatar pixel art - Mahlignus">
             <div class="content-about-me-text">
-                <p>Em 2014 iniciei a minha carreira como estagiário em desenvolvimento com PowerBuilder e banco de dados Oracle. Ao longo da minha jornada como desenvolvedor continuei no mercado de trabalho com o PowerScript enquanto estudava outras ferramentas para alguns projetos pessoais.</p>
+                <p>Em 2014 iniciei a minha carreira como estagiário em desenvolvimento com PowerBuilder e banco de dados Oracle. Ao longo da minha jornada como desenvolvedor continuei no mercado de trabalho com o PowerScript e banco de dados SQL Server enquanto estudava outras ferramentas para alguns projetos pessoais.</p>
                 <p>Para desenvolvimento profissional, visando agregar o conhecimento Full Stack, estudo front-end com HTML, CSS e React, bem como projetos de back-end com Node.js, Java com Spring Boot e Python.</p>
                 <p>Também estudo desenvolvimento de jogos como hobby, atualmente usando Unity com a linguagem C#.</p>
             </div>
         </section>
         
-        <!-- EM BREVE 
-        <section class="content-projects">
+        <section id="section-projects" class="content-projects">
+            
+            <h2 class="section-title">PROJETOS</h2>
             <div class="content-projects-text">
-                <h2>PROJETOS</h2>
                 <p>Cards com projetos: happy hour slicer - data, pula neymar - </p>
             </div>
-        </section-->
+
+            <div class="row">
+                <div class="card">
+                    <h2>Happy Hour Slicer</h2>
+                    <img 
+                        class="card-image" 
+                        src="img/projects/happyhourslicer.jpg" 
+                        alt="Happy Hour Slicer" 
+                    />
+                    
+                    <p>Projeto de estudos do Android Studio</p>
+                    <p>Criado em: 2016</p>
+                    
+                    <div class="card-footer">
+                        <a href="https://play.google.com/store/apps/details?id=com.mahlabs.happyhourslicer" target="_blank">> Google Play</a>
+                        <a href="https://github.com/mahlignus/HappyHourSlicer" target="_blank">> Repositório</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Pula Neymar</h2>
+                    <img 
+                        class="card-image" 
+                        src="img/projects/pulaneymar.jpg" 
+                        alt="Pula Neymar" 
+                    />
+                    
+                    <p>Projeto de estudos em Godot 3</p>
+                    <p>Criado em: 2018</p>
+                    
+                    <div class="card-footer">
+                        <a href="https://play.google.com/store/apps/details?id=com.mahlabs.pulaneymar" target="_blank">> Google Play</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Pokédex</h2>
+                    <img class="card-image" src="img/projects/pokedex.jpg" alt="Pokédex" />
+                    
+                    <p>Projeto de front-end e consumo de APIs</p>
+                    <p>Criado em: 2023</p>
+                    
+                    <div class="card-footer">
+                        <a href="https://mahlignus.github.io/pokedex-html-css-js" target="_blank">> Acessar</a>
+                        <a href="https://github.com/mahlignus/pokedex-html-css-js" target="_blank">> Repositório</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="card">
+                    <h2>To-Do List</h2>
+                    <img class="card-image" src="img/projects/todo.jpg" alt="To-Do List" />
+                    
+                    <p>Projeto de front-end + back-end</p>
+                    <p>Criado em: 2023</p>
+                    
+                    <div class="card-footer">
+                        <a href="https://github.com/mahlignus/to-do-js" target="_blank">> Repositório Front-end</a>
+                        <a href="https://github.com/mahlignus/to-do-server" target="_blank">> Repositório Back-end</a>
+                        <a href="https://github.com/mahlignus/to-do-server" target="_blank">> Versão teste (LocalStorage)</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>
         <span class="logo">MAHLIGNUS</span>
-        <!--img src="img/logo.png" alt="Rodapé - Mahlignus"-->
     </footer>
     
 </body>

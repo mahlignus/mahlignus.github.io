@@ -22,7 +22,40 @@ body {
     color: var(--medium-green);
 }
 
+h2 {
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Play';
+    font-size: 16px;
+}
+
+a:link {
+    color: var(--medium-green);
+    padding: 10px;
+}
+
+a:visited {
+    color: var(--light-green);
+    background-color: transparent;
+}
+
+a:hover {
+    color: var(--dark-1);
+    background-color: var(--light-green);
+}
+
+a:active {
+    color: var(--medium-green);
+    padding: 10px;
+}
+
 header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,6 +95,10 @@ header {
 .header-menu-item:active {
     color: var(--medium-green);
     background-color: var(--light-green);
+}
+
+.section-title {
+    margin-top: 50px;
 }
 
 .content {
@@ -109,7 +146,7 @@ header {
 
 .content-projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
@@ -122,34 +159,39 @@ header {
     gap: 32px;
 }
 
-h2 {
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    height: 430px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-footer {
+    margin-top: 32px;
+}
+
+.card-image {
+    max-width: 100%;
+    padding: 16px;
+}
+
+.card a {
+    display: flex;
     font-family: 'Press Start 2P';
-    font-size: 16px;
-}
-
-p {
-    font-family: 'Play';
-    font-size: 16px;
-}
-
-a:link {
-    color: var(--medium-green);
-    padding: 10px;
-}
-
-a:visited {
-    color: var(--light-green);
-    background-color: transparent;
-}
-
-a:hover {
-    color: var(--dark-1);
-    background-color: var(--light-green);
-}
-
-a:active {
-    color: var(--medium-green);
-    padding: 10px;
+    font-size: 10px;
 }
 
 footer {
