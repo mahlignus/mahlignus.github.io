@@ -53,6 +53,7 @@ a:active {
 }
 
 header {
+    border-bottom: 0.4px solid var(--light-green);
     position: sticky;
     top: 0;
     z-index: 999;
@@ -87,6 +88,10 @@ header {
     .header-menu {
         display: none;
     }
+
+    header {
+        position: relative;
+    }
 }
 
 .header-menu-item {
@@ -107,7 +112,6 @@ header {
 }
 
 .content {
-    border-top: 0.4px solid var(--light-green);
     margin-bottom: 32px;
     text-align: center;
 }
