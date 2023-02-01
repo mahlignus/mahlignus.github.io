@@ -1,156 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Desenvolvimento de software Mahlabs." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahlignus - landing page">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-    <!-- Bootstrap --> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <title>Mahlabs</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="logo-object-only-ico.ico" />
-
+    
+    <title>Mahlignus</title>
 </head>
-
 <body>
 
-    <!-- MENU -->
-    <nav class="navbar navbar-custom navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-            <a class="navbar-brand" href="index.html">
-                <strong>MAHL</strong>ABS
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#page-home">HOME</a></li>
-            <li><a href="#page-about">SOBRE MIM</a></li>
-            <li><a href="#page-contato">CONTATO</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header>
+        <span class="logo">MAHLIGNUS</span>
+        <!--img class="header-image" src="img/logo.png" alt="logo"-->
+        <nav class="header-menu">
+            <a class="header-menu-item">HOME</a>
+            <a class="header-menu-item">SOBRE MIM</a>
+            <a class="header-menu-item">PROJETOS</a>
+            <a class="header-menu-item">CONTATO</a>
+        </nav>
+    </header>
 
-
-    <!-- HEADER -->
-    <div class="row header" style="margin-top: 50px">
-        <div class="slide-home">
-
-        </div>
-
-        <div class="col-md-12 text-center gradient">
-            <span style="font-size:20px;">Mahlabs = Mahl Labs = Mah Labs = My Labs</span>
-        </div>
-    </div>
-
-    <div class="container">
-
+    <main class="content">
         
-        <section id="page-home">
-            <div class="row content">
-                <div class="col-md-2"></div>
+        <section class="content-home">
+            
+            <div class="content-home-text">
+                <h2 class="content-home-text-title">Rafael Mahl</h2>
+            
+                <p class="content-home-text-description">
+                    <span>Cientista da Computação</span>
+                    <span>Esteio, RS</span>
+                </p>
+                <p class="content-icon">
+                    <a href="https://github.com/mahlignus"><i class="fa-brands fa-github-square"></i> github.com/mahlignus</a>
+                    <a href="https://www.linkedin.com/in/rafaelmahl/"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rafaelmahl</a>
+                </p>
                 
-                <div class="col-md-8 page-home text-center">
-                    <p class="text-center" style="margin:50px">
-                        <a href="#"><img src="img/logo-pixelart-mahlabs.png"></a>
-                    </p>
-                    <p class="text-justify" style="margin-bottom: 50px">
-                        Mahlabs surgiu da união de dois nomes. "Mahl" faz parte do meu sobrenome, este me ajuda a fazer diversos trocadilhos para criar nomes de usuário para personagens nos jogos ou identidades em redes sociais. "Labs", que não tem nenhum significado especial, mas vem de laboratórios, que, ao menos para mim, traz uma ideia de criação, uma fábrica de ideias. 
-                        
-                    </p>
-
-                </div>
-
-                <div class="col-md-2"> </div>
-            </div>
-        </section>
-<hr>
-        <section id="page-about" class="text-center">
-            <h2>Sobre mim</h2>
-            <div class="row content">
-                <div class="col-md-2"></div>
-                
-                <div class="col-md-8 page-about text-left">
-                    <img style="
-                        float: left;
-                        border: transparent thin solid;
-                        padding: 5px;
-                        margin: 0px 10px 10px 0;
-                        border-radius: 10%;
-                        max-width: 186px;" src='img/page-about-me.jpg'/>
-
-                    
-                    <p class="text-justify">
-                        Rafael Mahl, sendo estranho desde 1994, cientista da computação, Porto Alegre, RS.
-                        Posso me descrever como criativo, proativo e insistente. 
-                    </p><p class="text-justify" >
-                        Mahlabs surgiu da união de dois nomes. "Mahl" faz parte do meu sobrenome, este me ajuda a fazer diversos trocadilhos para criar nomes de usuário para personagens nos jogos ou identidades em redes sociais. "Labs", que não tem nenhum significado especial, mas vem de laboratórios, que, ao menos para mim, traz uma ideia de criação, uma fábrica de ideias. O nome também carrega um significado na sua sonoridade: Mahlabs, Mah labs, My labs.
-                    </p>
-
-                <div class="col-md-8" styles="
-                display: flex; justify-content: center"> 
-
-                    <h3>Skills</h3>
-
-                    <ul style="margin-left: 25px">
-                        <li>Desktop: PowerBuilder</li>
-                        <li>Front-end: HTML, CSS, React</li>
-                        <li>Back-end: Java, Python, C#, Javascript, PHP</li>
-                        <li>Versionamento: Git</li>
-                        <li>Arte digital: Photoshop, Gimp, Corel Draw, Krita</li>
-                        <li>Desenvolvimento de jogos: Unity, Godot</li>
-                    </ul>
-            </div>
-        </section>
-<hr>
-        <section id="page-contato" class="content-section text-center" style="margin-bottom: 50px">
-            <h3>Outros links</h3>
-                <ul class="list-inline banner-social-buttons">
-
-                <li><a href="https://play.google.com/store/apps/developer?id=Mahlabs" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-android"> <span class="network-name"><!--Google Play--></span></i></a></li>
-
-                <li><a href="https://facebook.com/devmahlabs" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-facebook"> <span class="network-name"><!--Facebook--></span></i></a></li>
-
-                <li><a href="https://www.youtube.com/channel/UCiLLBl8CRZCvy1pC6XNiY0w" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-youtube-play"> <span class="network-name"><!--Youtube--></span></i></a></li>
-
-                <li><a href="https://twitter.com/mahlignus" class="btn btn-default btn-lg"><i class="fa fa-twitter" target="_blank"> <span class="network-name"><!--Twitter--></span></i></a></li>
-
-                <li><a href="https://instagram.com/mahlignus" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-instagram"> <span class="network-name"><!--Instagram--></span></i></a></li>
-
-                </ul>
             </div>
         </section>
 
+        <section class="content-about-me">
+            <h2>SOBRE MIM</h2>
+            <img class="content-about-me-image" src="img/pixelart-mahlignus.jpg" alt="avatar pixel art - Mahlignus">
+            <div class="content-about-me-text">
+                <p>Em 2014 iniciei a minha carreira como estagiário em desenvolvimento com PowerBuilder e banco de dados Oracle. Ao longo da minha jornada como desenvolvedor continuei no mercado de trabalho com o PowerScript enquanto estudava outras ferramentas para alguns projetos pessoais.</p>
+                <p>Para desenvolvimento profissional, visando agregar o conhecimento Full Stack, estudo front-end com HTML, CSS e React, bem como projetos de back-end com Node.js, Java com Spring Boot e Python.</p>
+                <p>Também estudo desenvolvimento de jogos como hobby, atualmente usando Unity com a linguagem C#.</p>
+            </div>
+        </section>
+        
+        <!-- EM BREVE 
+        <section class="content-projects">
+            <div class="content-projects-text">
+                <h2>PROJETOS</h2>
+                <p>Cards com projetos: happy hour slicer - data, pula neymar - </p>
+            </div>
+        </section-->
+    </main>
 
-    </div>
-
-
-
-    <!-- FOOTER -->
-    <div class="row footer">
-        <div class="col-md-12 text-center">
-            <a href="#page_home">
-                <img src="img/logo-simple.png" alt="Logo Footer Mahlabs" id="logo-rodape">
-            </a>
-
-            <p></p>
-        </div>
-    </div>
-
+    <footer>
+        <span class="logo">MAHLIGNUS</span>
+        <!--img src="img/logo.png" alt="Rodapé - Mahlignus"-->
+    </footer>
+    
 </body>
-
 </html>

@@ -1,131 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+    --dark-1: #080808;
+    --dark-2: #0D0208;
+    --dark-bg: linear-gradient(90deg, var(--dark-1) 0%, var(--dark-2) 15%, var(--dark-2) 85%, var(--dark-1) 100%);
+    --dark-green: #003B00;
+    --medium-green: #008f11;
+    --light-green: #00ff41;
+}
+
 * {
-    padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-.header {
-    background: #000;
+body {
+    font-size: 100%;
+    background: var(--dark-bg);
+    color: var(--medium-green);
 }
 
-.header .slide-home {
-    background-image: url(../img/slide-page-home.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 370px;
-    width: 100%;
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--dark-1);
 }
 
-.header .gradient {
-    background: linear-gradient(90deg, #fff000, #eee333, #fff000);
-    height: 30px;
-    width: 100%;
+.logo {
+    color: var(--medium-green);
+    font-family: 'Press Start 2P';
+    border: 2px solid var(--medium-green);
+    padding: 16px;
 }
 
-.container {
-    background: #bbbbbb88;
+.header-image {
+    width: 128px;
 }
 
-.content .page-home{
-    font-family: "Roboto";
-    font-size: 20px;
-    text-align: left;
+.header-menu {
+    display: flex;
 }
 
-.page-about{
-    font-family: "Roboto";
-    font-size: 16px;
+.header-menu-item {
+    font-family: 'Press Start 2P';
+    font-size: clamp(8px, 8px, 16px);
+    color: var(--medium-green);
+    padding: 1rem;
 }
 
-.gallery{
-    max-height: 200;
-    max-width: 200px;
-    padding: 5px;
+.header-menu-item:hover {
+    color: var(--dark-1);
+    background-color: var(--light-green);
+    padding: 1rem;
 }
 
-.footer {
-    background: #7b7b7d;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: Roboto;
+.header-menu-item:active {
+    color: var(--medium-green);
+    background-color: var(--light-green);
 }
 
-.footer #logo-rodape{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    height: 50px;
+.content {
+    border-top: 0.4px solid var(--light-green);
+    margin-bottom: 32px;
+    text-align: center;
 }
 
-.thumbnail{
-    width: 100%;
-    overflow: hidden;
+.content-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
 }
 
-.thumbnail img{
-    -webkit-transition:all 0.5s ease;
+.content-home-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.thumbnail img:hover{
-    transform: scale(1.5);
+.content-home-text-description {
+    display: flex;
+    flex-direction: column;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+.content-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+.content-about-me-image {
+    width: 256px;
+}
+
+.content-about-me-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+.content-projects-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
 }
 
-/* MENU CUSTOM */
-.navbar-custom {
-    background-color:#202020;
-    color:#ffffff;
-    border-radius: 0;
-    font-family: "Roboto";
+p {
+    font-family: 'Play';
+    font-size: 16px;
 }
 
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
+a:link {
+    color: var(--medium-green);
+    padding: 10px;
 }
 
-.navbar-custom .navbar-nav > .active > a {
-    color: #eee333;
+a:visited {
+    color: var(--light-green);
     background-color: transparent;
 }
 
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus,
-.navbar-custom .navbar-nav > .open >a {
-    text-decoration: none;
-    background-color: #eee333;
-    color: #202020;
+a:hover {
+    color: var(--dark-1);
+    background-color: var(--light-green);
 }
 
-.navbar-custom .navbar-brand {
-    color: #eee333;
-    background-color: #151515;
+a:active {
+    color: var(--medium-green);
+    padding: 10px;
 }
 
-.navbar-custom .navbar-brand:hover {
-    color: #fff;
-}
-
-.navbar-custom .navbar-toggle {
-    background-color:#202020;
-    border-color: #fff;
-}
-.navbar-custom .icon-bar {
-    background-color:#fff;
-    border: 1px transparent;
-}
-
-.navbar-collapse.in{
-    overflow-y: auto;
+footer {
+    display: flex;
+    border-top: 0.4px solid var(--light-green);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--dark-1);
 }
