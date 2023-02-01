@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="/img//favicon_io/favicon.ico">
+
     <title>Mahlignus</title>
 </head>
 <body>
@@ -34,7 +36,7 @@
                     <span>Cientista da Computação</span>
                     <span>Esteio, RS</span>
                 </p>
-                <p class="content-icon">
+                <p class="content-home-icon">
                     <a href="https://github.com/mahlignus"><i class="fa-brands fa-github-square"></i> github.com/mahlignus</a>
                     <a href="https://www.linkedin.com/in/rafaelmahl/"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/rafaelmahl</a>
                 </p>
@@ -44,11 +46,15 @@
 
         <section id="section-about-me" class="content-about-me">
             <h2 class="section-title">SOBRE MIM</h2>
-            <img class="content-about-me-image" src="img/pixelart-mahlignus.jpg" alt="avatar pixel art - Mahlignus">
-            <div class="content-about-me-text">
-                <p>Em 2014 iniciei a minha carreira como estagiário em desenvolvimento com PowerBuilder e banco de dados Oracle. Ao longo da minha jornada como desenvolvedor continuei no mercado de trabalho com o PowerScript e banco de dados SQL Server enquanto estudava outras ferramentas para alguns projetos pessoais.</p>
-                <p>Para desenvolvimento profissional, visando agregar o conhecimento Full Stack, estudo front-end com HTML, CSS e React, bem como projetos de back-end com Node.js, Java com Spring Boot e Python.</p>
-                <p>Também estudo desenvolvimento de jogos como hobby, atualmente usando Unity com a linguagem C#.</p>
+            
+            <div class="content-about-me-info">
+                <img class="content-about-me-image" src="img/avatarwbg.png" alt="avatar pixel art - Mahlignus">
+                <div class="content-about-me-text">
+                    <p>Em 2014 iniciei a minha carreira como estagiário em desenvolvimento com PowerBuilder e banco de dados Oracle. Ao longo da minha jornada como desenvolvedor continuei no mercado de trabalho com o PowerScript e banco de dados SQL Server enquanto estudava outras ferramentas para alguns projetos pessoais.</p>
+                    <p>Para desenvolvimento profissional, visando agregar o conhecimento Full Stack, estudo front-end com HTML, CSS e React, bem como projetos de back-end com Node.js, Java com Spring Boot e Python.</p>
+                    <p>Também estudo desenvolvimento de jogos como hobby, atualmente usando Unity com a linguagem C#.</p>
+                </div>
+                
             </div>
         </section>
         
@@ -56,7 +62,7 @@
             
             <h2 class="section-title">PROJETOS</h2>
 
-            <div class="row">
+            <div class="cards">
                 <div class="card">
                     <h2>Happy Hour Slicer</h2>
                     <img 
@@ -65,9 +71,12 @@
                         alt="Happy Hour Slicer" 
                     />
                     
-                    <p>Projeto de estudos do Android Studio</p>
-                    <p>Criado em: 2016</p>
                     
+                    <div class="card-description">
+                        <p>Projeto de estudos do Android Studio</p>
+                        <p>Criado em: 2016</p>
+                    </div>
+
                     <div class="card-footer">
                         <a href="https://play.google.com/store/apps/details?id=com.mahlabs.happyhourslicer" target="_blank">> Google Play</a>
                         <a href="https://github.com/mahlignus/HappyHourSlicer" target="_blank">> Repositório</a>
@@ -82,8 +91,10 @@
                         alt="Pula Neymar" 
                     />
                     
-                    <p>Projeto de estudos em Godot 3</p>
-                    <p>Criado em: 2018</p>
+                    <div class="card-description">
+                        <p>Projeto de estudos em Godot 3</p>
+                        <p>Criado em: 2018</p>
+                    </div>
                     
                     <div class="card-footer">
                         <a href="https://play.google.com/store/apps/details?id=com.mahlabs.pulaneymar" target="_blank">> Google Play</a>
@@ -94,29 +105,30 @@
                     <h2>Pokédex</h2>
                     <img class="card-image" src="img/projects/pokedex.jpg" alt="Pokédex" />
                     
-                    <p>Projeto de front-end e consumo de APIs</p>
-                    <p>Criado em: 2023</p>
+                    <div class="card-description">
+                        <p>Projeto de front-end e consumo de APIs</p>
+                        <p>Criado em: 2023</p>
+                    </div>
                     
                     <div class="card-footer">
                         <a href="https://mahlignus.github.io/pokedex-html-css-js" target="_blank">> Acessar</a>
                         <a href="https://github.com/mahlignus/pokedex-html-css-js" target="_blank">> Repositório</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
                 
                 <div class="card">
                     <h2>To-Do List</h2>
                     <img class="card-image" src="img/projects/todo.jpg" alt="To-Do List" />
                     
-                    <p>Projeto de front-end + back-end</p>
-                    <p>Criado em: 2023</p>
+                    <div class="card-description">
+                        <p>Projeto de front-end + back-end</p>
+                        <p>Criado em: 2023</p>
+                    </div>
                     
                     <div class="card-footer">
                         <a href="https://github.com/mahlignus/to-do-js" target="_blank">> Repositório Front-end</a>
                         <a href="https://github.com/mahlignus/to-do-server" target="_blank">> Repositório Back-end</a>
-                        <a href="https://mahlignus.github.io/to-do-js-localstorage" target="_blank">> Versão teste (LocalStorage)</a>
+                        <a href="https://mahlignus.github.io/to-do-js-localstorage" target="_blank">> Versão LocalStorage</a>
                     </div>
                 </div>
 

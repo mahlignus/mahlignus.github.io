@@ -71,12 +71,22 @@ header {
     padding: 16px;
 }
 
+.section-title {
+    margin-top: 50px;
+}
+
 .header-image {
     width: 128px;
 }
 
 .header-menu {
     display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-menu {
+        display: none;
+    }
 }
 
 .header-menu-item {
@@ -89,16 +99,11 @@ header {
 .header-menu-item:hover {
     color: var(--dark-1);
     background-color: var(--light-green);
-    padding: 1rem;
 }
 
 .header-menu-item:active {
     color: var(--medium-green);
     background-color: var(--light-green);
-}
-
-.section-title {
-    margin-top: 50px;
 }
 
 .content {
@@ -125,6 +130,11 @@ header {
     flex-direction: column;
 }
 
+.content-home-icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content-about-me {
     display: flex;
     flex-direction: column;
@@ -134,14 +144,18 @@ header {
     padding: 32px;
 }
 
-.content-about-me-image {
-    width: 256px;
-}
 
 .content-about-me-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 32px;
+}
+
+.content-about-me-image {
+    max-width: 256px;
+    max-height: 256px;
+    margin-bottom: 32px;
 }
 
 .content-projects {
@@ -159,18 +173,19 @@ header {
     gap: 32px;
 }
 
-.row {
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
     border: 1px solid;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    padding: 30px;
+    padding: 32px;
     margin: 20px;
-    width: 400px;
+    width: 375px;
     height: 430px;
     transition: all 0.3s ease-out;
 }
@@ -185,13 +200,22 @@ header {
 
 .card-image {
     max-width: 100%;
-    padding: 16px;
+    padding: 8px;
+    border: 2px solid var(--medium-green);
+}
+
+.card-description {
+    margin-top: 16px;
+}
+
+.card h2 {
+    margin-bottom: 32px;
 }
 
 .card a {
-    display: flex;
     font-family: 'Press Start 2P';
     font-size: 10px;
+    display: flex;
 }
 
 footer {
