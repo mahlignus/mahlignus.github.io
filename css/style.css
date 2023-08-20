@@ -65,15 +65,38 @@ header {
     background-color: var(--dark-1);
 }
 
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+}
 .logo {
     color: var(--medium-green);
     font-family: 'Press Start 2P';
     border: 2px solid var(--medium-green);
     padding: 16px;
+    user-select: none;
+}
+
+.logo:hover {
+    color: var(--dark-1);
+    background-color: var(--light-green);
 }
 
 .section-title {
     margin-top: 50px;
+    padding: 10px
+}
+
+.section-title:hover {
+    background-color: var(--light-green);
+    color: var(--dark-1);
+    padding: 10px 10px
 }
 
 .header-image {
@@ -148,18 +171,58 @@ header {
     padding: 32px;
 }
 
+.content-about-me-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-about-me-info {
+        flex-direction: column;
+    }
+}
 
 .content-about-me-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 32px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.content-about-me-text a {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.content-about-me-text a:link {
+    color: var(--medium-green);
+    text-decoration: underline;
+}
+
+.content-about-me-text a:visited{
+    color: var(--light-green);
+    background-color: transparent;
+}
+
+.content-about-me-text a:hover {
+    color: var(--dark-1);
+    background-color: var(--light-green);
+}
+
+.content-about-me-text a:active {
+    color: var(--medium-green);
 }
 
 .content-about-me-image {
     max-width: 256px;
     max-height: 256px;
     margin-bottom: 32px;
+}
+
+.content-about-me-image:hover {
+    background-color: var(--light-green);
 }
 
 .content-projects {
@@ -182,6 +245,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .card {
