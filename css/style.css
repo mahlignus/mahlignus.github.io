@@ -125,7 +125,7 @@ section {
 
 .header-menu-item {
     font-family: 'Press Start 2P';
-    font-size: clamp(8px, 8px, 16px);
+    font-size: 12px;
     color: var(--medium-green);
     padding: 1rem;
 }
