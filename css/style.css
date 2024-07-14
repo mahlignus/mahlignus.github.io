@@ -264,6 +264,7 @@ section {
     width: 375px;
     height: 500px;
     transition: all 0.3s ease-out;
+    background-color: #000
 }
 
 .card:hover {
@@ -281,6 +282,7 @@ section {
     padding: 8px;
     border: 2px solid var(--medium-green);
     object-fit: contain;
+    background-color: var(--dark-green)
 }
 
 .card-description {
@@ -289,6 +291,7 @@ section {
 
 .card h2 {
     margin-bottom: 32px;
+    font-size: 12px;
 }
 
 .card a {
